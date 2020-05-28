@@ -1,7 +1,8 @@
-﻿<Properties StartupConfiguration="{D851FE85-33C0-42EB-889E-E37B3A2DA3EF}|Default">
+﻿<Properties StartupConfiguration="{ADDCD4A3-9595-403A-B200-B9BF6D420F62}|Default">
+  <MonoDevelop.Ide.ItemProperties.AsyncServer PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="1" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
@@ -10,5 +11,4 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ServerVersionTwo PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
