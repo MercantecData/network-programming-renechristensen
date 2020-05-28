@@ -1,13 +1,11 @@
-﻿<Properties>
+﻿<Properties StartupConfiguration="{819AD9E9-CBBE-405C-BF28-A4B22B7BAB17}|Default">
+  <MonoDevelop.Ide.ItemProperties.ClientVersionTwo PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="23" Column="1" />
+      <File FileName="Program.cs" Line="31" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <DisabledProjects>
-    <String>opgaveFem.csproj</String>
-  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
