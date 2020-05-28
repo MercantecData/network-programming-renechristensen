@@ -13,21 +13,27 @@ namespace ServerVersionTwo
             int port = 25000;
             IPAddress ip = IPAddress.Any;
 
+            // så declarerer vi vores byte array som vi bruger til at lagre vore meddellelse i byteform inden de oversættes til charform (og derfra samles som en string)
+            byte[] buffer = new byte[256];
+
             // vi begynder at lede efter indkommende forbindelser
             TcpListener listener = startListening(ip, port);
 
 
+
             Console.WriteLine("Welcome clients");
-            // vi sætter den første indkommende forbindelse som TcpClient, dvs. det der peges tilbage på.
+
+            // vi sætter den første indkommende forbindelse som TcpClient.
             TcpClient client = listener.AcceptTcpClient();
 
+            // fra client får vi fat i datastrømmen og aflæser antallet af indkommende bytes.
             NetworkStream stream = client.GetStream();
-            byte[] buffer = new byte[256];
             int numberOfBytesRead = stream.Read(buffer, 0, 256);
 
             // vi afkoder meddelelsen fra klienten
             String message = Encoding.UTF8.GetString(buffer, 0, numberOfBytesRead);
 
+            // endeligt udskriver vi meddelelsen
             Console.WriteLine(message);
         }
 
