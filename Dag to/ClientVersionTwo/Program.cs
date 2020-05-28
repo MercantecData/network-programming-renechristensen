@@ -13,7 +13,7 @@ namespace ClientVersionTwo
             TcpClient client = new TcpClient();
 
             // declarerer variable der er nødvendige til at lave endpoint
-            int port = 25001;
+            int port = 25000;
             IPAddress ip = IPAddress.Parse("127.0.0.1");
 
             // vi declarerer et endpoint, altså det sted på internettet hvor dataene skal sendes hen, med andre ord addressen på serveren
