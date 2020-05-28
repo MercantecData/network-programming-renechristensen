@@ -1,3 +1,4 @@
+                NetworkStream clientStream = ourClient.GetStream();
 ﻿using System;
 using System.Net.Sockets;
 using System.Net;
