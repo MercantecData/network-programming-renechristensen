@@ -1,0 +1,6 @@
+/Users/praktikcenterviborgmercantec/Desktop/SecondRepository/network-programming-renechristensen/Dag to/ClientVersionTwo/bin/Debug/ClientVersionTwo.exe
+/Users/praktikcenterviborgmercantec/Desktop/SecondRepository/network-programming-renechristensen/Dag to/ClientVersionTwo/bin/Debug/ClientVersionTwo.pdb
+/Users/praktikcenterviborgmercantec/Desktop/SecondRepository/network-programming-renechristensen/Dag to/ClientVersionTwo/obj/Debug/ClientVersionTwo.csprojAssemblyReference.cache
+/Users/praktikcenterviborgmercantec/Desktop/SecondRepository/network-programming-renechristensen/Dag to/ClientVersionTwo/obj/Debug/ClientVersionTwo.csproj.CoreCompileInputs.cache
+/Users/praktikcenterviborgmercantec/Desktop/SecondRepository/network-programming-renechristensen/Dag to/ClientVersionTwo/obj/Debug/ClientVersionTwo.exe
+/Users/praktikcenterviborgmercantec/Desktop/SecondRepository/network-programming-renechristensen/Dag to/ClientVersionTwo/obj/Debug/ClientVersionTwo.pdb
