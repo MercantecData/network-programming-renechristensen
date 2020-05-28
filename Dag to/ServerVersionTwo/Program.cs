@@ -13,13 +13,8 @@ namespace ServerVersionTwo
             int port = 25000;
             IPAddress ip = IPAddress.Any;
 
-            
-            // Herefter declarerer vi et IPEndpoint.
-            IPEndPoint localEndPoint = new IPEndPoint(ip, port);
-
-            // Vi declarerer en Listener. En listener venter på indkommende forbindelser efter den er blevet startet
-            TcpListener listener = new TcpListener(localEndPoint);
-            listener.Start();
+            // vi begynder at lede efter indkommende forbindelser
+            TcpListener listener = startListening(ip, port);
 
 
             Console.WriteLine("Welcome clients");
@@ -34,6 +29,18 @@ namespace ServerVersionTwo
             String message = Encoding.UTF8.GetString(buffer, 0, numberOfBytesRead);
 
             Console.WriteLine(message);
+        }
+
+
+        public static TcpListener startListening(IPAddress ip, int port)
+        {
+            // Herefter declarerer vi et IPEndpoint.
+            IPEndPoint localEndPoint = new IPEndPoint(ip, port);
+
+            // Vi declarerer en Listener. En listener venter på indkommende forbindelser efter den er blevet startet
+            TcpListener listener = new TcpListener(localEndPoint);
+            listener.Start();
+            return listener;
         }
     }
 }
