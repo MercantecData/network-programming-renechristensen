@@ -3,9 +3,9 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 
-namespace ClientVersionTwo
+namespace AsyncClientVersionOne
 {
-    class ClientTwo
+    class AsyncClient
     {
         public static void Main(string[] args)
         {
@@ -13,7 +13,7 @@ namespace ClientVersionTwo
             TcpClient client = new TcpClient();
 
             // declarerer variable der er nødvendige til at lave endpoint
-            int port = 25000;
+            int port = 26000;
             IPAddress ip = IPAddress.Parse("127.0.0.1");
 
             // vi declarerer et endpoint, altså det sted på internettet hvor dataene skal sendes hen, med andre ord addressen på serveren
@@ -26,12 +26,17 @@ namespace ClientVersionTwo
             // Så laver vi en reference til netværksstrømmen mellem klient og server.
             NetworkStream stream = client.GetStream();
 
-            // så sender vi en besked
+            // så sender vi en besked til serveren
             Console.WriteLine("hvad vil du gerne skrive til serveren?");
             String text = Console.ReadLine();
             byte[] buffer = Encoding.UTF8.GetBytes(text);
             stream.Write(buffer, 0, buffer.Length);
 
+            // vi modtager en besked fra serveren
+            buffer = new byte[256];
+            int numberOfBytesRead = stream.Read(buffer, 0, 256);
+            String receivedMessage = Encoding.UTF8.GetString(buffer, 0, numberOfBytesRead);
+            Console.WriteLine(receivedMessage);
             // og endelig ender vi forbindelsen til serveren
             client.Close();
         }

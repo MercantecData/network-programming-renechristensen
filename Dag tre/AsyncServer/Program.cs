@@ -3,14 +3,14 @@ using System.Net.Sockets;
 using System.Net;
 using System.Text;
 
-namespace ServerVersionTwo
+namespace AsyncServerVersionOne
 {
-    class ServerTwo
+    class AsyncServer
     {
         public static void Main(string[] args)
         {
             // vi starter med at declarere hvilken port(25000) og hvilke ipaddresser (alle) vi senere skal reagere på
-            int port = 25000;
+            int port = 26000;
             IPAddress ip = IPAddress.Any;
 
             // så declarerer vi vores byte array som vi bruger til at lagre vore meddellelse i byteform inden de oversættes til charform (og derfra samles som en string)
@@ -26,17 +26,31 @@ namespace ServerVersionTwo
             // vi sætter den første indkommende forbindelse som TcpClient.
             TcpClient client = listener.AcceptTcpClient();
 
-            // fra client får vi fat i datastrømmen og aflæser antallet af indkommende bytes.
+            // fra client får vi fat i datastrømmen
             NetworkStream stream = client.GetStream();
-            int numberOfBytesRead = stream.Read(buffer, 0, 256);
+            
 
-            // vi afkoder meddelelsen fra klienten
-            String message = Encoding.UTF8.GetString(buffer, 0, numberOfBytesRead);
+            // Vi sender en besked til client
+            Console.Write("Write your message here");
+            String text = Console.ReadLine();
+            buffer = Encoding.UTF8.GetBytes(text);
+            stream.Write(buffer, 0, buffer.Length);
 
-            // endeligt udskriver vi meddelelsen
-            Console.WriteLine(message);
+            // Vi aflæser og udskriver eventuelle medellelser
+            ReceiveMessage(stream);
+
+            // endeligt udskriver vi klientens meddelelsen
+            Console.ReadKey();
         }
 
+        public static async void ReceiveMessage(NetworkStream stream)
+        {
+            byte[] buffer = new byte[256];
+            // Vi afventer klientens meddellelse og indtil da gå vi videre med resten af koden
+            int numberOfBytesRead = await stream.ReadAsync(buffer, 0, 256);
+            String message = Encoding.UTF8.GetString(buffer, 0, numberOfBytesRead);
+            Console.WriteLine("\n" + message);
+        }
 
         public static TcpListener startListening(IPAddress ip, int port)
         {

@@ -1,0 +1,6 @@
+/Users/praktikcenterviborgmercantec/Desktop/SecondRepository/network-programming-renechristensen/Dag tre/AsyncClient/bin/Debug/AsyncClient.exe
+/Users/praktikcenterviborgmercantec/Desktop/SecondRepository/network-programming-renechristensen/Dag tre/AsyncClient/bin/Debug/AsyncClient.pdb
+/Users/praktikcenterviborgmercantec/Desktop/SecondRepository/network-programming-renechristensen/Dag tre/AsyncClient/obj/Debug/AsyncClient.csprojAssemblyReference.cache
+/Users/praktikcenterviborgmercantec/Desktop/SecondRepository/network-programming-renechristensen/Dag tre/AsyncClient/obj/Debug/AsyncClient.csproj.CoreCompileInputs.cache
+/Users/praktikcenterviborgmercantec/Desktop/SecondRepository/network-programming-renechristensen/Dag tre/AsyncClient/obj/Debug/AsyncClient.exe
+/Users/praktikcenterviborgmercantec/Desktop/SecondRepository/network-programming-renechristensen/Dag tre/AsyncClient/obj/Debug/AsyncClient.pdb
