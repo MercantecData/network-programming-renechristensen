@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DagEtOpgaveEt", "DagEtOpgaveEt.csproj", "{8E4AA855-6DFC-4EAF-BE33-609D61693BFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E4AA855-6DFC-4EAF-BE33-609D61693BFB}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{8E4AA855-6DFC-4EAF-BE33-609D61693BFB}.Debug|anycpu.Build.0 = Debug|anycpu
+		{8E4AA855-6DFC-4EAF-BE33-609D61693BFB}.Release|anycpu.ActiveCfg = Release|anycpu
+		{8E4AA855-6DFC-4EAF-BE33-609D61693BFB}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal

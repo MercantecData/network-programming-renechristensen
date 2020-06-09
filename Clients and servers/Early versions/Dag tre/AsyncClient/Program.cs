@@ -32,13 +32,19 @@ namespace AsyncClientVersionOne
             byte[] buffer = Encoding.UTF8.GetBytes(text);
             stream.Write(buffer, 0, buffer.Length);
 
-            // vi modtager en besked fra serveren
-            buffer = new byte[256];
-            int numberOfBytesRead = stream.Read(buffer, 0, 256);
+            // vi afventer en besked fra serveren
+            receiveMessage(stream);
+            // og endelig ender vi forbindelsen til serveren
+            Console.ReadKey();
+            client.Close();
+        }
+
+        public static async void receiveMessage(NetworkStream stream)
+        {
+            byte[] buffer = new byte[256];
+            int numberOfBytesRead = await stream.ReadAsync(buffer, 0, 256);
             String receivedMessage = Encoding.UTF8.GetString(buffer, 0, numberOfBytesRead);
             Console.WriteLine(receivedMessage);
-            // og endelig ender vi forbindelsen til serveren
-            client.Close();
         }
     }
 }
