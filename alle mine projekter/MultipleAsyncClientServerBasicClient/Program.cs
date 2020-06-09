@@ -13,7 +13,7 @@ namespace UdpClientVersionTwo
             UdpClient client = new UdpClient();
             byte[] translatedFromString;
 
-            IPEndPoint endPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 21000);
+            IPEndPoint endPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 20000);
 
             // en bruger af chatten kan her sætte eget chatnavn
             Console.WriteLine("Hello User. What is your name?");
