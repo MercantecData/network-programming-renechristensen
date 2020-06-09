@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MulticlientServefr", "MulticlientServefr.csproj", "{06F18476-9F1C-4ED9-8E8F-B2E2AA0D3CBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06F18476-9F1C-4ED9-8E8F-B2E2AA0D3CBD}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{06F18476-9F1C-4ED9-8E8F-B2E2AA0D3CBD}.Debug|anycpu.Build.0 = Debug|anycpu
+		{06F18476-9F1C-4ED9-8E8F-B2E2AA0D3CBD}.Release|anycpu.ActiveCfg = Release|anycpu
+		{06F18476-9F1C-4ED9-8E8F-B2E2AA0D3CBD}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal

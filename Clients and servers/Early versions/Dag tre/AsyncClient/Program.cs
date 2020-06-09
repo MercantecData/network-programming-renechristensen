@@ -13,8 +13,8 @@ namespace AsyncClientVersionOne
             TcpClient client = new TcpClient();
 
             // declarerer variable der er nødvendige til at lave endpoint
-            int port = 26000;
-            IPAddress ip = IPAddress.Parse("127.0.0.1");
+            int port = 13356;
+            IPAddress ip = IPAddress.Parse("172.16.114.12");
 
             // vi declarerer et endpoint, altså det sted på internettet hvor dataene skal sendes hen, med andre ord addressen på serveren
             IPEndPoint endPoint = new IPEndPoint(ip, port);

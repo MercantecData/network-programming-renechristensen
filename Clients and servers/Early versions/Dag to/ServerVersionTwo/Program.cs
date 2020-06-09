@@ -9,22 +9,17 @@ namespace ServerVersionTwo
     {
         public static void Main(string[] args)
         {
-            // vi starter med at declarere hvilken port(25000) og hvilke ipaddresser (alle) vi senere skal reagere på
-            int port = 25000;
-            IPAddress ip = IPAddress.Any;
-
-            // så declarerer vi vores byte array som vi bruger til at lagre vore meddellelse i byteform inden de oversættes til charform (og derfra samles som en string)
-            byte[] buffer = new byte[256];
-
             // vi begynder at lede efter indkommende forbindelser
-            TcpListener listener = startListening(ip, port);
+            TcpListener listener = startListening();
 
-
-
-            Console.WriteLine("Welcome clients");
+            Console.WriteLine("Welcome client");
 
             // vi sætter den første indkommende forbindelse som TcpClient.
             TcpClient client = listener.AcceptTcpClient();
+
+            // så declarerer vi vores byte array som vi bruger til at lagre vore meddellelse i byteform
+            // inden de oversættes til charform (og derfra samles som en string)
+            byte[] buffer = new byte[256];
 
             // fra client får vi fat i datastrømmen og aflæser antallet af indkommende bytes.
             NetworkStream stream = client.GetStream();
@@ -38,8 +33,12 @@ namespace ServerVersionTwo
         }
 
 
-        public static TcpListener startListening(IPAddress ip, int port)
+        public static TcpListener startListening()
         {
+            // vi starter med at declarere hvilken port(25000) og hvilke ipaddresser (alle) vi senere skal reagere på
+            int port = 25000;
+            IPAddress ip = IPAddress.Any;
+
             // Herefter declarerer vi et IPEndpoint.
             IPEndPoint localEndPoint = new IPEndPoint(ip, port);
 
