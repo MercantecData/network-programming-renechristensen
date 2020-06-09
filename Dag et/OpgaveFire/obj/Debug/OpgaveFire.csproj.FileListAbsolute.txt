@@ -1,2 +1,0 @@
-/Users/praktikcenterviborgmercantec/Desktop/SecondRepository/network-programming-renechristensen/Dag et/OpgaveFire/obj/Debug/OpgaveFire.csprojAssemblyReference.cache
-/Users/praktikcenterviborgmercantec/Desktop/SecondRepository/network-programming-renechristensen/Dag et/OpgaveFire/obj/Debug/OpgaveFire.csproj.CoreCompileInputs.cache
