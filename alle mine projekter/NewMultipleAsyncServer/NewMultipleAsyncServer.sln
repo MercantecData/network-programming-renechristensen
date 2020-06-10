@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewMultipleAsyncServer", "NewMultipleAsyncServer.csproj", "{4893C7DB-88C3-4B88-817D-44F2DC0968E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4893C7DB-88C3-4B88-817D-44F2DC0968E8}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{4893C7DB-88C3-4B88-817D-44F2DC0968E8}.Debug|anycpu.Build.0 = Debug|anycpu
+		{4893C7DB-88C3-4B88-817D-44F2DC0968E8}.Release|anycpu.ActiveCfg = Release|anycpu
+		{4893C7DB-88C3-4B88-817D-44F2DC0968E8}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal
